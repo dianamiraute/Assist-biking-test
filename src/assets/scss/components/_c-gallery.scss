@@ -1,0 +1,42 @@
+.c-gallery{
+	position: relative;
+  	overflow: hidden;
+}
+
+.c-gallery__image{ 
+    width: 100%;
+}
+
+.c-gallery__see-more{ 
+	position: absolute;
+    display: inline-block;
+    top: -20px;
+    right: -35px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    transform: skew(214deg, 8deg);
+}
+
+.c-gallery__see-more-text{
+    margin-top: 8px;
+	float: left;
+    transform: skew(-214deg, -8deg);
+    color: #000000;
+    font-weight: 700;
+    font-size: 25px; 
+    /* font-size: 40px; */
+}
+
+.c-gallery__see-more-text:hover{
+	text-decoration: none;
+    color: #000000;
+}
+
+.c-gallery__see-more-arrow{
+	/*width: 48px;*/
+	width:30px; 
+	margin: 0 20px; 
+} 
+
+ 

@@ -1,0 +1,21 @@
+.c-title-underline{
+    padding: 30px 0; 
+	font-family: Sansation;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    color: #1b1b1b;
+}
+
+.c-title-underline:after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 70px;
+    height: 3px;
+    background-color: #f47920;
+} 
+
+.c-title-underline--card{
+    padding-left:30px;
+} 

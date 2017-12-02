@@ -1,0 +1,28 @@
+.c-page-hero{
+    background: url("../img/hero-img1.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}  
+  
+.c-page-hero__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; 
+    /*font-size: 117px;*/ 
+    mix-blend-mode: color-dodge;
+    color: rgba(255, 177, 120, 0.17);
+    font-size: 50px;
+}
+
+.c-page-hero__title--small{ 
+    /*font-size: 65px;*/
+    font-size: 30px; 
+    color: #fff; 
+}

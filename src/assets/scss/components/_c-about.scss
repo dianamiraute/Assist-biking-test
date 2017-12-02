@@ -1,16 +1,24 @@
 .c-about {
-  background-color: orange;
+   
 }
 
 .c-about__image {
-
+	width: 100%;
+    margin: auto;
 }
 
-.c-about__title {
-
+.c-about__title { 
+	font-family: Sansation;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
 }
 
 .c-about__subtitle {
+	font-family: Sansation;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: left;
 
 }
 
