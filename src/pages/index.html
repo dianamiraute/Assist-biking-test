@@ -8,63 +8,72 @@
    <div  class="c-page-hero">
      {{> c-hero }}
    </div>
- </header> 
-     
+ </header>
+
 
 <section class="c-section" id="about">
-  <div class="c-section__container" > 
+  <div class="c-section__container" >
     <h2 class="c-title-underline">About us</h2>
     {{> c-about }}
   </div>
 </section>
- 
+
 <section class="c-section c-section--grey" id="team">
   <div class="c-section__container">
     <h2 class="c-title-underline">Our team</h2>
     {{> c-team}}
   </div>
 </section>
- 
- 
+
+
 <section class="c-section" id="gallery">
-  <div class="c-section__container"> 
+  <div class="c-section__container">
     <h2 class="c-title-underline">Gallery</h2>
   </div>
-      {{> c-gallery }}
+  {{> c-gallery }}
 </section>
 
 <section class="c-section" id="activity">
-  <div class="c-section__container"> 
-    <div class="c-card"> 
-      {{> c-activity }}
-    </div>   
-  </div>
-</section>
+  <div class="c-section__container">
+    <div class="c-grid">
 
-<section class="c-section" id="competitions">
-  <div class="c-section__container"> 
-    <div class="c-card">
-      {{> c-competition }}  
+      <div class="c-grid__column">
+        <div class="c-card">
+          {{> c-activity }}
+        </div>
+      </div>
+
+      <div class="c-grid__column">
+        <div class="c-card">
+          {{> c-competition }}
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+
 <section class="c-section" id="blog">
-  <div class="c-section__container"> 
+  <div class="c-section__container">
     <h2 class="c-title-underline">Blog</h2>
     {{> c-blog }}
   </div>
 </section>
 
 <section class="c-section" id="statistics">
-  <div class="c-section__container"> 
+  <div class="c-section__container">
     <h2 class="c-title-underline">Statistics</h2>
     {{> c-statistics }}
   </div>
 </section>
 
 <section class="c-section c-section--dark">
-  <div class="c-section__container">   
-    {{> c-footer }} 
+  <div class="c-section__container">
+    {{> c-footer }}
   </div>
 </section>
+
+<button class="c-scroll-top [ js-scroll-top ]">
+  scroll top
+</button>

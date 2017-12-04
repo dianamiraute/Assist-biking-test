@@ -3,8 +3,6 @@ import $ from 'jquery';
 window.$ = $;
 
 
-
-
 // This is an import to my  custom file  "hello.js"
 import hello from './hello';
 
@@ -16,12 +14,10 @@ hello();
 //--------------------------------------------------------------------------------------
 function toggleMenu() {
   $('.js-c-page-nav__menu').toggleClass('active');
-  $('.js-c-page-nav__toggle').toggleClass('active'); 
+  $('.js-c-page-nav__toggle').toggleClass('active');
 }
 
 $('.js-c-page-nav__toggle').on('click', toggleMenu);
-  
-
 
 
 // -------------------------------------------------------------------------------------
@@ -41,23 +37,60 @@ $(window).scroll(function() {
 });
 
 
-
-
-
 $(function() {
-  
   // contact form animations
   $('.js-c-team-member__popup').click(function() {
     $('.c-team-popup').fadeToggle();
   })
-  $(document).mouseup(function (e) {
+  $(document).mouseup(function(e) {
     var container = $(".c-team-popup");
 
     if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
+      &&
+      container.has(e.target).length === 0) // ... nor a descendant of the container
     {
-        container.fadeOut();
+      container.fadeOut();
     }
   });
-  
 });
+
+
+// -------------------------------------------------------------------------------------
+// SCROLL TOP
+//--------------------------------------------------------------------------------------
+
+function scrollTop() {
+  $('html,body').animate({
+      scrollTop: 0
+    },
+    1500);
+}
+
+$('.js-scroll-top').on('click', scrollTop);
+
+
+// -------------------------------------------------------------------------------------
+// COMPETITION CAROUSEL
+//--------------------------------------------------------------------------------------
+let step = 25;
+
+function competitionGoUp() {
+  $('.js-competition-scroll-area').animate({
+      scrollTop:  $('.js-competition-scroll-area').scrollTop() - step
+    },
+    500);
+}
+
+function competitionGoDown() {
+  $('.js-competition-scroll-area').animate({
+      scrollTop: $('.js-competition-scroll-area').scrollTop() + step
+    },
+    500);
+}
+
+function initCompetitionCarousel() {
+  $('.js-competition-up').on('click', competitionGoUp);
+  $('.js-competition-down').on('click', competitionGoDown);
+}
+
+initCompetitionCarousel();
