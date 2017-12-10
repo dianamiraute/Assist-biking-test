@@ -1,6 +1,5 @@
 import $ from 'jquery'; 
-window.$ = $;
- 
+window.$ = $; 
 
 // This is an import to my  custom file  "hello.js"
 import hello from './hello';
@@ -14,7 +13,10 @@ import Lightbox from './lightbox2';
 //--------------------------------------------------------------------------------------
 function toggleMenu() {
   $('.js-c-page-nav__toggle').toggleClass('active');
-  $('.js-c-page-nav__menu').toggleClass('active');
+  $('.js-c-page-nav__menu').toggleClass('active'); 
+
+  $('.js-c-page-nav__toggle').toggleClass('active');
+ 
 }
   $('.js-c-page-nav__toggle').on('click', toggleMenu);
 
@@ -24,6 +26,7 @@ $(".js-c-page-nav__menu a").click(function () {
   $('.js-c-page-nav__toggle').removeClass('active');
 });
 
+ 
 
 $(document).mouseup(function (e) {  
   if (!$(".js-c-page-nav__menu").is(e.target) 
@@ -51,6 +54,9 @@ $(function(){
 
 });
 
+ 
+$('.js-c-page-nav__toggle').on('click', toggleMenu);
+ 
 
 
 // -------------------------------------------------------------------------------------
@@ -106,14 +112,23 @@ $(function() {
   })
   $(document).mouseup(function (e) {
     var container = $(".js-c-form-join-us");
+ 
+$(function() {
+  // contact form animations
+  $('.js-c-team-member__popup').click(function() {
+    $('.c-team-popup').fadeToggle();
+  })
+  $(document).mouseup(function(e) {
+    var container = $(".c-team-popup");
+ 
 
     if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
+      &&
+      container.has(e.target).length === 0) // ... nor a descendant of the container
     {
       container.fadeOut();
     }
-  });
-  
+  }); 
 });
 
 
@@ -134,8 +149,12 @@ $('.js-scroll-top').on('click', scrollTop);
 // -------------------------------------------------------------------------------------
 // COMPETITION CAROUSEL
 //--------------------------------------------------------------------------------------
+ 
 
 let step = 160;
+ 
+let step = 25;
+>>>>>>> 274dad73890935cbc4c1f6b7e3a3c4ece07ad1d2
 
 function competitionGoUp() {
   $('.js-competition-scroll-area').animate({
@@ -232,4 +251,4 @@ initCompetitionCarousel();
 
 
     }); 
-   
+    
