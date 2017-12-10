@@ -2,7 +2,7 @@
 .c-team-popup { 
   display: none;
   z-index:999999; 
-  font-family: Sansation;
+  font-family: 'Sansation Regular';
   width: 400px;
   text-align: center;
   background: #fff;
@@ -19,7 +19,7 @@
 }
 
 .c-team-popup__col{ 
-  padding: 20px;
+  padding: 30px;
 }
 
 .c-team-popup__col-border--top{
@@ -61,4 +61,33 @@
 
 .c-team-popup__footer-row{
   padding:0;
+}
+
+
+@media screen and (min-width: 786px) {   
+
+    .c-team-popup {  
+      width: 600px; 
+    } 
+
+    .c-team-popup__row{ 
+      padding: 50px;
+    } 
+
+    .c-team-popup__member-image{
+      height:60px; 
+    }
+
+    .c-team-popup__text{ 
+      font-size:45px;
+    }
+
+    .c-team-popup__text-small{ 
+      font-size: 18px; 
+    }
+
+    .c-team-popup__footer{ 
+      padding: 15px;     
+    } 
+    
 }

@@ -11,18 +11,19 @@
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-weight: 600;
+    transform: translate(-50%, -50%); 
     text-align: center;
     text-transform: uppercase; 
-    /*font-size: 117px;*/ 
     mix-blend-mode: color-dodge;
     color: rgba(255, 177, 120, 0.17);
-    font-size: 50px;
+    font-size: 12vw;    
+    font-family: 'Sansation Bold';
 }
 
-.c-page-hero__title--small{ 
-    /*font-size: 65px;*/
-    font-size: 30px; 
+.c-page-hero__title--small{  
+    font-size: 5vw; 
     color: #fff; 
+    margin-top:2px;
 }
+
+ 

@@ -5,9 +5,12 @@
 @import 'elements/elements';
 
 // COMPONENTS
+@import 'components/c-grid';
+@import 'components/c-lightbox';
 @import 'components/c-header';
 @import 'components/c-nav';
 @import 'components/c-hero';
+@import 'components/c-scroll-top';
 @import 'components/c-section';
 @import 'components/c-title-underline';
 @import 'components/c-about';
@@ -21,6 +24,4 @@
 @import 'components/c-blog';
 @import 'components/c-statistics';
 @import 'components/c-footer';
-
- 
- 
+@import 'components/c-join-us';

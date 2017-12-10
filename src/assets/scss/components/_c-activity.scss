@@ -1,11 +1,12 @@
 
 .c-activity {
+  font-family: 'Sansation Regular';
    width: 100%;      
    box-shadow: rgba(6, 74, 208, 0.1) 0px 40px 40px 0px;
-  /*border: 1px solid;   */
 } 
 
 .c-activity__cell{  
+
 } 
 
 .c-activity__cell:after{ 
@@ -16,8 +17,8 @@
     background-color: #f6f9ff;
 }
 .c-activity__cell-record{
-	display:flex;
- 	padding: 20px;  
+  display:flex;
+  padding: 20px;  
 } 
 
 .c-activity__image{
@@ -34,13 +35,15 @@
 .c-activity__text{
 	margin-bottom:10px;
 }
+
 .c-activity__date{  	
     color: #848484; 
 }    
 
 @media screen and (min-width: 1024px) {  
+
      .c-activity{  
-          width: 80%;     
-          height: 750px;
+        width: 80%;     
+        height: 785px;
     }
 }

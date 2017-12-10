@@ -1,20 +1,35 @@
-<footer class="c-page-footer">
+<footer class="c-page-footer container">
  
-    <div class=" c-page-footer__container">    
+  <div class="row c-footer__container-row">
+    <div class=" c-page-footer__container col">    
       <nav class="c-page-footer__meniu">
           <ul class="c-page-footer__meniu-list">
-            <li><a class="c-page-footer__meniu-link" href="#about">About us</a></li>
-            <li><a class="c-page-footer__meniu-link" href="#team">Our team</a></li>
-            <li><a class="c-page-footer__meniu-link" href="#gallery">Gallery</a></li>
-            <li><a class="c-page-footer__meniu-link" href="#activity">Activity</a></li>
-            <li><a class="c-page-footer__meniu-link" href="#competitions">Competitions</a></li>
-            <li><a class="c-page-footer__meniu-link" href="#blog">Blog</a></li>
-            <li><a class="c-page-footer__meniu-link" href="#statistics">Statistics</a></li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#about">About us</a>
+            </li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#team">Our team</a>
+            </li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#activity">Activity</a>
+            </li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#competitions">Competitions</a>
+            </li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#blog">Blog</a>
+            </li>
+            <li class="c-page-footer__meniu-list-item">
+              <a class="c-page-footer__meniu-link" href="#statistics">Statistics</a>
+            </li>
           </ul> 
       </nav>
     </div>
 
-    <div class=" c-page-footer__container"> 
+    <div class=" c-page-footer__container col"> 
       <div class="c-page-footer__social-media">
           <h3 class="c-page-footer__social-media-title">Social media</h3>
 
@@ -46,12 +61,13 @@
           </div>
 
           <div class="c-page-footer__button-join-us">
-              <a class="c-page-footer__button-join-us-link" href="#">Join our team</a>
+              <a class="c-page-footer__button-join-us-link [ js-c-page-footer__button-join-us-link ]" href="#">Join our team</a>
+ 
           </div>
       </div> 
     </div>
    
-    <div class=" c-page-footer__container">  
+    <div class=" c-page-footer__container col">  
       <div class="c-page-footer__contact">
           <h3 class="c-page-footer__contact-title">Contact</h3> 
           <p class="c-page-footer__contact-text"> 
@@ -62,5 +78,6 @@
           </p> 
       </div>  
     </div> 
-
+  </div> 
+        {{> c-join-us }} 
 </footer>

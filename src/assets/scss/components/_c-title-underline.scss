@@ -1,9 +1,7 @@
 .c-title-underline{
     padding: 30px 0; 
-	font-family: Sansation;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: left;
+	font-family: 'Sansation Regular';
+    font-size: 24px;  
     color: #1b1b1b;
 }
 
@@ -17,5 +15,14 @@
 } 
 
 .c-title-underline--card{
-    padding-left:30px;
+    padding-left: 30px;
 } 
+
+
+ 
+@media screen and (min-width: 1024px) {  
+
+    .c-title-underline{
+        font-size: 30px;
+    }
+}

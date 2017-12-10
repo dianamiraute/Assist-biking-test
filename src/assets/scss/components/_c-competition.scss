@@ -1,52 +1,83 @@
-
-.c-competition { 
-    width: 100%;     
-    height: 750px;
-    margin-right: 20%;     
-    box-shadow: rgba(6, 74, 208, 0.1) 0px 40px 40px 0px;
-    overflow: overlay;
+.c-competition {
+    font-family: 'Sansation Regular';
+    width: 100%;
+    height: 785px;
+    box-shadow: rgba(6, 74, 208, 0.1) 0 40px 40px 0;
+    position: relative;
 }
 
-.c-competition__cell{
-    padding: 30px 0; 
+.c-competition__scroll-area {
+    overflow: hidden;
+   /* overflow: overlay;*/
+    height: 638px;
+}
+
+.c-competition__button  {
+    position: absolute; 
+    right: 45px;
+    top: 45%;
+    border: none;
+    background-image: url(../img/arrow_2.png);
+    background-size: cover;
+    height: 42px;
+    width: 22px;
+    background-color: transparent; 
+    transform: rotate(270deg);
+}
+
+.c-competition__button--down {
+    top: 55%;  
+    transform: rotate(90deg);
+}
+
+.c-competition__cell {
     display: flex;
+    padding: 30px 0;
     align-items: center;
-} 
+}
 
-.c-competition__image{ 
-    width: 130px;    
-} 
+.c-competition__image {
+    width: 130px;
+}
 
-.c-competition__text{
-    display: inline-block;   
-    margin: 0 20px;
+.c-competition__text {
     font-size: 20px;
     font-weight: bold;
-    text-align: left;  
-} 
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left;
+}
 
-.c-competition__date{     
-    margin-top: 10px; 
-    color: #848484;
+.c-competition__date {
     font-size: 16px;
     font-weight: bold;
-    text-align: left; 
-}  
+    margin-top: 10px;
+    text-align: left;
+    color: #848484;
+}
 
-.c-competition__icon {     
+.c-competition__icon {
+    z-index: 9999;
     width: 45px;
     height: 45px;
-    background-color: #f47920;
-    border: solid 3px #ffffff;
-    border-radius: 50%;
+    margin-top: -80px;
     margin-left: -50px;
-    z-index: 9999;
-    margin-top: -80px; 
-}  
+    border: solid 3px #fff;
+    border-radius: 50%;
+    background-color: #f47920;
+}
 
-.c-competition__text-icon{    
-    text-align: center;
+.c-competition__text-icon {
     font-size: 10px;
     margin-top: 5px;
+    text-align: center;
     color: white;
-} 
+}
+
+
+@media screen and (min-width: 1024px) {  
+
+     .c-competition__text{  
+        font-size: 30px;
+    }
+}

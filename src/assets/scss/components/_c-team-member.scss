@@ -2,6 +2,7 @@
     max-width: 100%;
     min-width: 180px;
 }
+
 .js-c-team-member__popup{ 
     cursor: pointer; 
 }
@@ -15,14 +16,15 @@
     margin: 10px 40px;
 }
 
-.c-team-member__image--active{
-    width: 170px;
+.c-team-member__image.active{
+    width: 170px; 
     height: 170px; 
+    margin: 30px;
     box-shadow: 0px 8px 20px 0 rgba(6, 74, 208, 0.23);
 } 
 
 .c-team-member__name{ 
-    font-family: Sansation;
+    font-family: 'Sansation Regular';
     font-size: 15px;
     text-align: center;
     color: #000000;
@@ -32,6 +34,6 @@
     font-size: 15px;
     text-align: center;
     color: rgba(0, 0, 0, 0.5); 
-    font-family: Sansation;
+    font-family: 'Sansation Regular';
     font-size: 22px;
 }

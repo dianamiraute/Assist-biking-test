@@ -1,5 +1,5 @@
 .c-statistics{ 
-	font-family: 'Sansation', helvetica, sans-serif; 
+	font-family: 'Sansation Regular';
 	line-height: 1; 
     white-space: nowrap; 
 }
@@ -12,7 +12,8 @@
 .c-statistics__record{
 	box-shadow: rgba(40, 85, 85, 0.1) 6px 4px 50px 10px;
 	padding: 30px 44px; 
-	margin-bottom: 25px;
+	margin: 25px;
+    min-width: 200px;
 }
  
 .c-statistics__nr{
@@ -36,23 +37,60 @@
 }
  
 
-@media screen and (min-width:1024px) {
+
+@media screen and (min-width:680px) {
+
+	.c-statistics__container{  
+	    display: flex;
+	    justify-content: space-between; 
+	} 
+	.c-statistics__record{ 
+		margin: 5px; 
+	} 
 	.c-statistics__nr{ 
-    	font-size: 50px;  
+    	font-size: 40px;  
 	}
+	.c-statistics__nr--small{ 
+	    font-size: 12px; 
+	}
+
+	.c-statistics__desc{ 
+	    font-size: 12px; 
+	}
+}
+
+@media screen and (min-width:900px) { 
+ 
+	.c-statistics__nr{ 
+    	font-size: 60px;  
+	}
+
 	.c-statistics__nr--small{ 
 	    font-size: 30px; 
 	}
 
 	.c-statistics__desc{ 
-	    font-size: 20px; 
+	    font-size: 30px; 
 	}
 }
 
 
-@media screen and (min-width:870px) {
-	.c-statistics__container{  
-	    display: flex;
-	    justify-content: space-between; 
+@media screen and (min-width:1024px) { 
+
+	.c-statistics__record{ 
+		margin: 5px;
+	    width: 540px;
+	} 
+
+	.c-statistics__nr{ 
+    	font-size: 70px;  
+	}
+
+	.c-statistics__nr--small{ 
+	    font-size: 30px; 
+	}
+
+	.c-statistics__desc{ 
+	    font-size: 30px; 
 	}
 }

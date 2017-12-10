@@ -1,24 +1,39 @@
-.c-team{
+
+ .c-team{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
 	
 }
 
 .c-team__container{
-    overflow:scroll;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
 }
 
 .c-team__slider{ 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
-
-.c-team__arrow{
-	margin-top: -60px;
+.c-team__arrow{ 
+    margin: 0 30px;
 }
-
+ 
 .c-team__arrow-img{
 	 
 }
  
+
  
+
+
+
+
+
+
  

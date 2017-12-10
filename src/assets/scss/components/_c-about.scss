@@ -1,24 +1,45 @@
 .c-about {
-   
+   font-family: 'Sansation Regular';
 }
 
 .c-about__image {
-	width: 100%;
-    margin: auto;
+	width: 100%;  
 }
-
-.c-about__title { 
-	font-family: Sansation;
-    font-size: 22px;
-    font-weight: 600;
-    text-align: left;
+ 
+.c-about__title {  
+	margin-top: 10px; 
+    font-size: 22px;  
 }
 
 .c-about__subtitle {
-	font-family: Sansation;
-    font-size: 14px;
-    font-weight: 100;
-    text-align: left;
-
+    font-size: 14px; 
 }
 
+ 
+@media screen and (min-width: 1124px) {  
+     .c-about__title{
+	 	margin-top: -150px;
+		font-size: 40px; 
+	    font-weight: 600;
+	    width: 275px;  
+	}
+
+	.c-about__subtitle { 
+	    font-size: 18px;  
+	    width: 360px;  
+	}
+}
+
+
+@media screen and (min-width: 1520px) {  
+     .c-about__title{
+	 	margin-top: -170px;
+	    font-size: 50px;
+	    width: 360px;
+	}
+
+	.c-about__subtitle { 
+	   font-size: 20px;
+   		width: 400px;  
+	}
+}

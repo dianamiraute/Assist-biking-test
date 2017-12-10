@@ -1,12 +1,14 @@
 .c-blog{ 
-	font-family: Sansation;
+	font-family: 'Sansation Regular';
 	display:flex;
 	flex-flow: row wrap;
 	justify-content:space-between;
 }
 
 .c-blog__container{  
-	margin-bottom:30px;
+	margin-bottom:30px; 
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .c-blog__banner{ 
@@ -40,15 +42,15 @@
     color: #ffffff;
 }
 
-.c-blog__desc{
-	font-family: Sansation;
-    font-size: 18px;
+.c-blog__desc{ 
+    font-size: 20px;
     font-weight: 600;
  	text-align: left;
  	color: #000000;
 }
 
 @media screen and (min-width: 1240px) {
+
     .c-blog__container{ 
         width: 30%;
     }

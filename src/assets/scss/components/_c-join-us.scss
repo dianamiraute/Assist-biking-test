@@ -1,0 +1,100 @@
+ 
+
+.c-form-join-us {
+  max-width: 450px;
+  margin: 0 auto; 
+  display: none;
+  z-index:999999; 
+  font-family: 'Sansation Regular';
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:55%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%) ;
+  border-radius: 3px;
+  
+  > div {
+    position: relative;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    
+    // Looks like placeholder
+    > label {
+      opacity: 0.3;
+      font-weight: bold;
+      position: absolute;
+      top: 22px;
+      left: 20px;
+    }
+    
+    > input[type="text"],
+    > input[type="email"],
+    > input[type="password"] {
+      width: 100%;
+      border: 0;
+      padding: 20px 20px 20px 50px;
+      background: #eee;
+      
+      &:focus {
+        
+        outline: 0;
+        background: white;
+        
+        & + label {
+          opacity: 0;
+        }
+      }
+      
+      &:valid {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+        & + label {
+          opacity: 0;
+        }
+      }
+      
+      &:invalid:not(:focus):not(:placeholder-shown) {
+        background: pink;
+        & + label {
+          opacity: 0;
+        }
+      }
+      
+      &:invalid:focus:not(:placeholder-shown) {
+        & ~ .c-form-join-us__requirements {
+          max-height: 200px;
+          padding: 0 30px 20px 50px;
+        }
+      }
+      
+    }
+    
+    .c-form-join-us__requirements {
+        padding: 0 30px 0 50px;
+        color: #999;
+        max-height: 0;
+        transition: 0.28s;
+        overflow: hidden;
+        color: red;
+        font-style: italic;
+    }
+    
+  }
+  
+    input[type="submit"] {
+        display: block;
+        width: 100%; 
+        background: #f47920;
+        color: white;
+        border: 0;
+        padding: 20px;
+        font-size: 1.2rem;
+     }
+  
+}
+ 
