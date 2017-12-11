@@ -1,41 +1,35 @@
 .c-competition {
-<<<<<<< HEAD
     font-family: 'Sansation Regular';
+    position: relative;
     width: 100%;
     height: 785px;
     box-shadow: rgba(6, 74, 208, 0.1) 0 40px 40px 0;
-    position: relative;
 }
 
 .c-competition__scroll-area {
     overflow: hidden;
-   /* overflow: overlay;*/
     height: 638px;
 }
 
-.c-competition__button  {
-    position: absolute; 
-    right: 45px;
+.c-competition__button {
+    position: absolute;
     top: 45%;
+    right: 45px;
+    width: 22px;
+    height: 42px;
+    transform: rotate(270deg);
     border: none;
+    background-color: transparent;
     background-image: url(../img/arrow_2.png);
     background-size: cover;
-    height: 42px;
-    width: 22px;
-    background-color: transparent; 
-    transform: rotate(270deg);
 }
 
 .c-competition__button--down {
-    top: 55%;  
-    transform: rotate(90deg);
-}
-
-=======
-    width: 100%;
-
-    box-shadow: rgba(6, 74, 208, 0.1) 0 40px 40px 0;
     position: relative;
+    top: 55%;
+    width: 100%;
+    transform: rotate(90deg);
+    box-shadow: rgba(6, 74, 208, 0.1) 0 40px 40px 0;
 }
 
 .c-competition__scroll-area {
@@ -43,17 +37,16 @@
     height: 650px;
 }
 
-.c-competition__button  {
+.c-competition__button {
     position: absolute;
-    right: 20px;
     top: 20px;
+    right: 20px;
 }
 
 .c-competition__button--down {
     right: 80px;
 }
 
->>>>>>> 274dad73890935cbc4c1f6b7e3a3c4ece07ad1d2
 .c-competition__cell {
     display: flex;
     padding: 30px 0;
@@ -97,14 +90,9 @@
     text-align: center;
     color: white;
 }
-<<<<<<< HEAD
 
-
-@media screen and (min-width: 1024px) {  
-
-     .c-competition__text{  
+@media screen and (min-width: 1024px) {
+    .c-competition__text {
         font-size: 30px;
     }
 }
-=======
->>>>>>> 274dad73890935cbc4c1f6b7e3a3c4ece07ad1d2
