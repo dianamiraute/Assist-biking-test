@@ -1,6 +1,6 @@
 
  <header class="c-page-header" id="header">
-   <nav  class="c-page-nav [ js-c-page-nav ]" id="mainNav">
+   <nav  class="c-page-nav [ js-c-page-nav ]">
      {{> c-nav }}
    </nav>
    <div  class="c-page-hero">
@@ -31,21 +31,22 @@
   {{> c-gallery }}
 </section>
 
-<section class="c-section" id="activity">
+<section class="c-section">
   <div class="c-section__container">
     <div class="c-grid">
 
-      <div class="c-grid__column">
+      <div class="c-grid__column" id="activity">
         <div class="c-card">
           {{> c-activity }}
         </div>
       </div>
 
-      <div class="c-grid__column">
+      <div class="c-grid__column" id="competitions">
         <div class="c-card">
           {{> c-competition }}
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -63,6 +64,7 @@
     <h2 class="c-title-underline">Statistics</h2>
     {{> c-statistics }}
   </div>
+</section>
 
 <section class="c-section c-section--dark">
   <div class="c-section__container">

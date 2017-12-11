@@ -24,29 +24,11 @@
     background-size: cover;
 }
 
-.c-competition__button--down {
-    position: relative;
-    top: 55%;
-    width: 100%;
-    transform: rotate(90deg);
-    box-shadow: rgba(6, 74, 208, 0.1) 0 40px 40px 0;
+.c-competition__button--down { 
+    top: 55%; 
+    transform: rotate(90deg); 
 }
-
-.c-competition__scroll-area {
-    overflow: overlay;
-    height: 650px;
-}
-
-.c-competition__button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.c-competition__button--down {
-    right: 80px;
-}
-
+  
 .c-competition__cell {
     display: flex;
     padding: 30px 0;

@@ -102,36 +102,25 @@ $(function() {
 // -------------------------------------------------------------------------------------
 // FORM JOIN US CONTAINER
 //--------------------------------------------------------------------------------------
-
 $(function() {
-
   $('.js-c-page-footer__button-join-us-link').click(function() {
     $('.js-c-form-join-us').fadeToggle();
-  });
-
+  })
   $(document).mouseup(function(e) {
     var container = $(".js-c-form-join-us");
 
-    $(function() {
-      // contact form animations
-      $('.js-c-team-member__popup').click(function() {
-        $('.c-team-popup').fadeToggle();
-      })
-      $(document).mouseup(function(e) {
-        var container = $(".c-team-popup");
-
-
-        if (!container.is(e.target) // if the target of the click isn't the container...
-          &&
-          container.has(e.target).length === 0) // ... nor a descendant of the container
-        {
-          container.fadeOut();
-        }
-      });
-    });
+    if (!container.is(e.target) // if the target of the click isn't the container...
+      &&
+      container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      container.fadeOut();
+    }
   });
 
+});
+ 
 
+ 
   // -------------------------------------------------------------------------------------
   // SCROLL TOP
   //--------------------------------------------------------------------------------------
@@ -249,4 +238,4 @@ $(function() {
 
   });
 
-});
+ 
